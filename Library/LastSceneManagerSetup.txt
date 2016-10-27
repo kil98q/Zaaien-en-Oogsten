@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/Scene_Coen.unity
+- path: Assets/_Scenes/Scene_Soufyan.unity
   isLoaded: 1
   isActive: 1
