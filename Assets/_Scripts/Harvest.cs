@@ -10,7 +10,7 @@ public class Harvest : MonoBehaviour {
         Collisionbox = GetComponent<Collider2D>();
 	    _cursorWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        if (Collisionbox.)
+        //if (Collisionbox.)
         {
 
         }

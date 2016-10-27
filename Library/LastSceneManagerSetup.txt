@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/Scene_Nabil.unity
+- path: Assets/_Scenes/Scene_Coen.unity
   isLoaded: 1
   isActive: 1

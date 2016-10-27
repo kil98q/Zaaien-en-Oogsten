@@ -63,8 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_Scripts\Harvest.cs" />
     <Compile Include="Assets\_Scripts\ScoreManager.cs" />
+    <Compile Include="Assets\_Scripts\Seeding.cs" />
     <Compile Include="Assets\_Scripts\interface\changeScene.cs" />
+    <Compile Include="Assets\_Scripts\land.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
