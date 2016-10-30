@@ -1,7 +1,7 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zaaien-en-Oogsten.CSharp", "Zaaien-en-Oogsten.CSharp.csproj", "{A32F5B12-1241-B64F-8E25-6B69D271086C}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{E83FD4BB-0931-0235-F8EA-FCD04926FDB6}") = "Zaaien-en-Oogsten", "Assembly-CSharp.csproj", "{D148F5B8-4A31-6C22-1A25-0F1238D303D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,12 +9,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A32F5B12-1241-B64F-8E25-6B69D271086C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A32F5B12-1241-B64F-8E25-6B69D271086C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A32F5B12-1241-B64F-8E25-6B69D271086C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A32F5B12-1241-B64F-8E25-6B69D271086C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D148F5B8-4A31-6C22-1A25-0F1238D303D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D148F5B8-4A31-6C22-1A25-0F1238D303D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D148F5B8-4A31-6C22-1A25-0F1238D303D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D148F5B8-4A31-6C22-1A25-0F1238D303D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
