@@ -30,7 +30,6 @@ public class land : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-	
 	}
 	
 	// Update is called once per frame
@@ -40,14 +39,30 @@ public class land : MonoBehaviour {
     public void AddWater(int Amount)
     {
         int newWater = Amount + Water;
-        if(newWater > 100)
+        if(newWater > MaxWater)
         {
             Water = MaxWater;
         }
         
     }
+    public void SetMaxWater(int MaximumWater)
+    {
+        MaxWater = MaximumWater;
+    }
     public void CalculateWater()
     {
-
+        // To be filled in when there is a plant object
     }
+    public void AddPlant(GameObject AddedPlant)
+    {
+        Plant = AddedPlant;
+    }
+    // Has to return yield aventually
+    /*
+    public Item[] RemovePlant()
+    {
+        //Item PlantYield[] = Plant.GetYield();
+        DestroyImmediate(Plant);
+    }*/
+
 }
