@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.UI; // <----
+using UnityEngine.UI; // <-- add UI library 
 using System.Collections;
 
 public class ScoreManager : MonoBehaviour
@@ -11,12 +11,13 @@ public class ScoreManager : MonoBehaviour
 	void Awake ()
     {
         _text = GetComponent<Text>(); //add the component to the Text method
-        _score = 0;
+        _score = 0; //score is set to 0
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
         _text.text = "Revenue: " + _score; //view the score text on screen
+        _score += 1; //add 1
 	}
 }
