@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Harvest : MonoBehaviour {
-    Vector3 _cursorWorld; // Will be changed when the input handler is ready
+    /* _cursorWorld; // Will be changed when the input handler is ready
     Collider2D Collisionbox;
 <<<<<<< HEAD
 
@@ -34,5 +34,5 @@ public class Harvest : MonoBehaviour {
     {
         return land.GetComponent<land>().RemovePlant();
     }
->>>>>>> f70e1c4a49b2e5112d9287efe0a5a65bf3c2cf24
+>>>>>>> f70e1c4a49b2e5112d9287efe0a5a65bf3c2cf24*/
 }
