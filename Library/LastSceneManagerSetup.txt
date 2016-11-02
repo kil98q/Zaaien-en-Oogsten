@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/_Scenes/Scene_Coen.unity
-=======
-- path: Assets/_Scenes/Scene_killian.unity
->>>>>>> origin/master
   isLoaded: 1
   isActive: 1
