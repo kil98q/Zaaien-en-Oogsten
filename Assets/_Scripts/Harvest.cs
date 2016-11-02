@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Harvest : MonoBehaviour {
-    Vector3 _cursorWorld; // Will be changed when the input handler is ready
+    /*Vector3 _cursorWorld; // Will be changed when the input handler is ready
     Collider2D Collisionbox;
 
 	// Update is called once per frame
@@ -31,5 +31,5 @@ public class Harvest : MonoBehaviour {
     private Item[] HarvestLand(GameObject land)
     {
         return land.GetComponent<land>().RemovePlant();
-    }
+    }*/
 }
