@@ -49,7 +49,7 @@ public class land : MonoBehaviour {
     {
         MaxWater = MaximumWater;
     }
-    public void CalculateWater()
+    void CalculateWater()
     {
         // To be filled in when there is a plant object
     }
@@ -57,12 +57,11 @@ public class land : MonoBehaviour {
     {
         Plant = AddedPlant;
     }
-    // Has to return yield aventually
-    /*
     public Item[] RemovePlant()
     {
-        //Item PlantYield[] = Plant.GetYield();
+        Item[] loot =Plant.GetComponent<Plant>().GetYield();
         DestroyImmediate(Plant);
-    }*/
+        return loot;
+    }
 
 }

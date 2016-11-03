@@ -2,9 +2,10 @@
 using System.Collections;
 
 public class Harvest : MonoBehaviour {
-    /* _cursorWorld; // Will be changed when the input handler is ready
-    Collider2D Collisionbox;
-<<<<<<< HEAD
+    private Vector3 _cursorWorld; // Will be changed when the input handler is ready
+    private Collider2D Collisionbox;
+    private GameObject land;
+    [SerializeField] private GameObject InventoryObject;
 
 	// Update is called once per frame
 	void Update () {
@@ -16,23 +17,16 @@ public class Harvest : MonoBehaviour {
 
         }
 	}
-=======
-    
-    Ray ray;
-    
-	// Update is called once per frame
-	void Update () {
-        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity);
-
-    }
     private void PlayAnimation()
     {
 
     }
-    private Item[] HarvestLand(GameObject land)
+    private void HarvestLand()
     {
-        return land.GetComponent<land>().RemovePlant();
+        Item[] looot = land.GetComponent<land>().RemovePlant();
+        foreach(Item loot in looot)
+        {
+            InventoryObject.GetComponent<Inventory>().Add(loot);
+        }
     }
->>>>>>> f70e1c4a49b2e5112d9287efe0a5a65bf3c2cf24*/
 }

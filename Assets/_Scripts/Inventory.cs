@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Inventory : MonoBehaviour {
-
+    [SerializeField]private List<Item> storedItems;
 	// Use this for initialization
 	void Start () {
 	
@@ -12,4 +13,8 @@ public class Inventory : MonoBehaviour {
 	void Update () {
 	
 	}
+    public void Add(Item _item)
+    {
+        storedItems.Add(_item);
+    }
 }

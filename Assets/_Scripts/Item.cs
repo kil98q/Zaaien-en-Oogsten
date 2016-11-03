@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public enum Types { Seed }
 
 
@@ -15,7 +16,8 @@ public class Item{
         get { return Name; }
         private set { Name = value; }
     }
-
+    
+    
 
     public Item(string Name,Types value)
     {
