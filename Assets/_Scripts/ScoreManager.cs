@@ -18,6 +18,15 @@ public class ScoreManager : MonoBehaviour
 	void Update ()
     {
         _text.text = "Revenue: " + _score; //view the score text on screen
-        _score += 1; //add 1
 	}
+
+    public void AddPoints(int _amount)
+    {
+        _score += _amount;
+    }
+
+    public void RemovePoints(int _amount)
+    {
+        _score -= _amount;
+    }
 }
