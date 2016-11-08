@@ -4,28 +4,42 @@ using System.Collections;
 public class PlayerAnim : MonoBehaviour {
 
 	Animator anim;
+	private int anime = 0;
 
 	void Start(){
 		//Verandert de variabele "anim" naar de component animator
 		anim = GetComponent<Animator> ();
 	}
 
-	void Update(){
-		//Terwijl de knop "O" wordt ingerukt, wordt de oogst animatie afgespeeldt
-		if (Input.GetKeyDown (KeyCode.O)) {
-			anim.SetInteger ("State", 1);
+	public void Zaai(){
+		anime = 1;
+		anim.SetInteger ("Anime", anime);
+		StartCoroutine (Zaaien ());
+	}
+		
+	IEnumerator Zaaien () {
+
+		while (anime == 1){
+
+			yield return new WaitForSeconds (0.69f);
+			anime = 0;
+			anim.SetInteger ("Anime", anime);
 		}
-		//Als de knop "O" wordt losgelaten, gaat de animatie terug naar de idle
-		if (Input.GetKeyUp (KeyCode.O)) {
-			anim.SetInteger ("State", 0);
-		}
-		//Terwijl de knop "Z" wordt ingerukt, wordt de zaai animatie afgespeeldt
-		if (Input.GetKeyDown (KeyCode.Z)) {
-			anim.SetInteger ("State", 2);
-		}
-		//Als de knop "Z" wordt losgelaten, gaat de animatie terug naar de idle
-		if (Input.GetKeyUp (KeyCode.Z)) {
-			anim.SetInteger ("State", 0);
+	}
+
+	public void Oogst(){
+		anime = 2;
+		anim.SetInteger ("Anime", anime);
+		StartCoroutine (Oogsten ());
+	}
+
+	IEnumerator Oogsten () {
+
+		while (anime == 2){
+
+			yield return new WaitForSeconds (1.3f);
+			anime = 0;
+			anim.SetInteger ("Anime", anime);
 		}
 	}
 }
