@@ -14,6 +14,7 @@ public class sell : MonoBehaviour {
 	
 	public void sellAllPlants()
     {
+        zaai.harvest = true;
         plants = zaai.Plants;
         for (int i = 0; i < plants.Length; i++)
         {
