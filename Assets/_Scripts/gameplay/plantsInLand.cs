@@ -7,6 +7,11 @@ public class plantsInLand : MonoBehaviour {
     [SerializeField] private GameObject[] Rows;
     [SerializeField] private GameObject[] plants;
     private int plantsFilled;
+
+    public GameObject[] _plantes
+    {
+        get { return plants; }
+    }
 	
     void Start()
     {
